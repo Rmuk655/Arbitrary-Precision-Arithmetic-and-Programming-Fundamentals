@@ -4,7 +4,7 @@ A Java arbitrary-precision arithmetic implementation is the flagship project in 
 
 ## Flagship: Arbitrary-Precision Calculator
 
-**[Explore the BigInt Calculator](Arbitrary-Precision-Calculator/)**
+**[Explore the BigInt Calculator](bigint-calculator/)**
 
 The calculator implements custom arbitrary-precision integer and decimal arithmetic rather than relying on Java's `java.math` arithmetic implementations.
 
@@ -16,18 +16,18 @@ Highlights:
 - Command-line interface, runnable JAR and Python wrapper.
 - Ant build configuration, Maven descriptor, tests and project report.
 
-See the [calculator README](Arbitrary-Precision-Calculator/README.md) for build instructions, usage and implementation details.
+See the [calculator README](bigint-calculator/README.md) for build instructions, usage and implementation details.
 
 ## Coursework and practice
 
 | Area | Directory | Contents |
 |---|---|---|
-| C linking and build systems | [`multi-binary-makefile/`](multi-binary-makefile/) and [assignment materials](problem-statements/) | Multi-binary C build, shared headers, modular source files and Make |
-| OCaml functional programming | [`ocaml-practice-problems/`](ocaml-practice-problems/) | Recursion, pattern matching, lists, trees, variants, options and exceptions |
-| Additional OCaml | [`ocaml-additional-practice/`](ocaml-additional-practice/) | Further functional-programming exercises |
+| C linking and build systems | [`c-linking-and-build-systems/`](c-linking-and-build-systems/) and [assignment materials](problem-statements/) | Multi-binary C build, shared headers, modular source files and Make |
+| OCaml functional programming | [`ocaml-functional-programming/`](ocaml-functional-programming/) | Recursion, pattern matching, lists, trees, variants, options and exceptions |
+| Additional OCaml | [`ocaml-advanced-practice/`](ocaml-advanced-practice/) | Further functional-programming exercises |
 | Linux command line | [`linux-shell-1/`](linux-shell-1/), [`linux-shell-2/`](linux-shell-2/), [`linux-shell-3/`](linux-shell-3/) | Command-line exercises and captured sessions |
-| Shell scripting | [`shell-scripting/`](shell-scripting/) | File operations, automation, CSV processing and text utilities |
-| Python text processing | [`python-text-processing/`](python-text-processing/) | File processing, text analysis, sorting and notebook exercises |
+| Shell scripting | [`linux-shell-scripting/`](linux-shell-scripting/) | File operations, automation, CSV processing and text utilities |
+| Python text processing | [`python-text-processing-exercises/`](python-text-processing-exercises/) | File processing, text analysis, sorting and notebook exercises |
 | Original assignment statements | [`problem-statements/`](problem-statements/) | Supporting specifications and assignment documents |
 
 ## Repository structure
