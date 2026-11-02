@@ -1,44 +1,39 @@
-# Software Development Fundamentals
+# BigInt Calculator & Software Development Fundamentals
 
-Hands-on exercises in the everyday toolchain of a systems programmer: C linking and multi-binary builds with
-Make, functional programming in OCaml, Linux shell commands and scripting, and Python text processing.
+A Java arbitrary-precision arithmetic implementation is the flagship project in this repository. The remaining directories preserve coursework and practical exercises in C build systems, OCaml, Linux, shell scripting and Python.
 
-[![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
+## Flagship: Arbitrary-Precision Calculator
 
-## What is here
+**[Explore the BigInt Calculator](Arbitrary-Precision-Calculator/)**
 
-| Topic | Folder | What it contains |
+The calculator implements custom arbitrary-precision integer and decimal arithmetic rather than relying on Java's `java.math` arithmetic implementations.
+
+Highlights:
+- Arbitrary-precision integer and decimal operations.
+- Addition, subtraction, multiplication and division.
+- Decimal calculations with 30 digits after the decimal point.
+- Division-by-zero handling.
+- Command-line interface, runnable JAR and Python wrapper.
+- Ant build configuration, Maven descriptor, tests and project report.
+
+See the [calculator README](Arbitrary-Precision-Calculator/README.md) for build instructions, usage and implementation details.
+
+## Coursework and practice
+
+| Area | Directory | Contents |
 |---|---|---|
-| Linking in C | `problem-statements/linking-in-c.docx` | Short write-up on what a linker does and how it is used in a C toolchain |
-| OCaml basics | `problem-statements/intro-to-ocaml.docx` | Tour of OCaml: `utop` experiments, modified expressions and explanations of the type errors |
-| Functional programming in OCaml | `ocaml-practice-problems/` | Eight problems: list splitting, `filter_map`, flattening, binary trees, `option` results (`safe_div`), a shape variant type, and exceptions (`find_index`), all via pattern matching and recursion |
-| Linux shell | `linux-shell-1/`, `linux-shell-2/`, `linux-shell-3/` | Command-line exercises with captured sessions (screenshots); `linux-shell-3/Assign6.sh` is a directory watcher that keeps timestamped backups of modified files (needs `inotify-tools`) |
-| More OCaml | `ocaml-additional-practice/` | Additional OCaml problems |
-| Shell scripting | `shell-scripting/scripts/` | Nine scripts (`Problem_1.sh` … `Problem_9.sh`): dates, renaming, word lookup, file generation, a phonebook, CSV column arithmetic, arithmetic-progression row appending, a spell checker and file combining |
-| Python text processing | `python-text-processing/` | Collatz step count, reversing a file's lines, word and character counts, dictionary diffs, record sorting and gematria; notebook version alongside |
-| Multi-binary Makefile | `multi-binary-makefile/` | Three binaries (`math_ops`, `string_ops`, `data_ops`) plus a combined `all_ops`, built from shared headers in `include/` and per-module sources in `src/`, with a `DEBUG=1` mode |
+| C linking and build systems | [`multi-binary-makefile/`](multi-binary-makefile/) and [assignment materials](problem-statements/) | Multi-binary C build, shared headers, modular source files and Make |
+| OCaml functional programming | [`ocaml-practice-problems/`](ocaml-practice-problems/) | Recursion, pattern matching, lists, trees, variants, options and exceptions |
+| Additional OCaml | [`ocaml-additional-practice/`](ocaml-additional-practice/) | Further functional-programming exercises |
+| Linux command line | [`linux-shell-1/`](linux-shell-1/), [`linux-shell-2/`](linux-shell-2/), [`linux-shell-3/`](linux-shell-3/) | Command-line exercises and captured sessions |
+| Shell scripting | [`shell-scripting/`](shell-scripting/) | File operations, automation, CSV processing and text utilities |
+| Python text processing | [`python-text-processing/`](python-text-processing/) | File processing, text analysis, sorting and notebook exercises |
+| Original assignment statements | [`problem-statements/`](problem-statements/) | Supporting specifications and assignment documents |
 
-Problem statements for the shell scripting, Python and Makefile exercises are in `problem-statements/`.
+## Repository structure
 
-## Running things
-
-```bash
-# OCaml (needs ocaml; utop is optional)
-ocaml ocaml-practice-problems/problem_1.ml
-
-# Shell scripts read and write files next to them, so run them from their folder
-cd shell-scripting/scripts && bash Problem_1.sh
-
-# Python (interactive: it prompts for each problem's input)
-cd python-text-processing/solution && python3 CS24BTECH11036.py
-
-# Multi-binary build
-cd multi-binary-makefile && make && ./all_ops      # or: make DEBUG=1, make clean
-```
-
-`Problem_8.sh` (spell checker) uses `/usr/share/dict/words` when present and otherwise falls back to the
-`words.txt` next to it.
+The original assignment folders and documents are retained alongside the topic-oriented directories so that the coursework context and source material remain available.
 
 ## License
 
-MIT, see [LICENSE](LICENSE).
+See [LICENSE](LICENSE).
