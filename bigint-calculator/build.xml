@@ -1,7 +1,7 @@
 <!--In the given project arbitraryarithmetic, we are trying to create a jar file from the java programs AFloat and AInteger which are 
 currently present in the folder arbitraryarithmetic. This basedir or base directory is the directory from where you should look at the 
 relative paths and "." refers to the current path of the given ant file.-->
-<project name="arbitraryarithmetic" default="jar" basedir=".">
+<project name="bigint-calculator" default="jar" basedir=".">
     <!-- Set properties -->
     <property name="src.dir"     value="src/main/java"/>
     <property name="build.dir"   value="build/classes"/>
