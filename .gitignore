@@ -7,3 +7,10 @@ string_ops
 data_ops
 all_ops
 *.spelling
+
+# Local tool and editor state
+.claude/
+.graphify/
+graphify-out/
+.vscode/
+.tools/
