@@ -1,0 +1,17 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Build C multi-binary project
+        run: make
+        working-directory: c-linking-and-build-systems
+      - name: Build BigInt calculator
+        run: ant jar
+        working-directory: bigint-calculator

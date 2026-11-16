@@ -32,7 +32,25 @@ See the [calculator README](bigint-calculator/README.md) for build instructions,
 
 ## Repository structure
 
-The original assignment folders and documents are retained alongside the topic-oriented directories so that the coursework context and source material remain available.
+Exact duplicates of the topic-oriented directories (the original assignment documents and the Assignment 4, 5 and 10 folders) were removed. The original assignment folders below are kept because their contents differ from the topic-oriented copies (later revisions or extra submission files such as zips):
+
+| Original folder | Topic-oriented directory |
+|---|---|
+| `Assignment 3 - OCaml Practice Problems/` | `ocaml-functional-programming/` |
+| `Assignment 6 - Linux shell commands/` | `linux-shell-3/` |
+| `Assignment 7 - OCaml Additional Practice/` | `ocaml-advanced-practice/` |
+| `Assignment 8 - Shell Scripting/` | `linux-shell-scripting/` |
+| `Assignment 9 - Python/` | `python-text-processing-exercises/` |
+
+## Build and run
+
+- BigInt calculator: `ant jar`, then `java -jar build/jar/aarithmetic.jar <int|float> <add|sub|mul|div> <a> <b>` (see [bigint-calculator/README.md](bigint-calculator/README.md)).
+- C multi-binary build: from `c-linking-and-build-systems/`, `make` builds all targets (`make run_math`, `make run_string`, `make run_data`, `make run_all_ops`, `make clean`; `make DEBUG=1` adds debug flags), per its `Makefile`.
+
+## Limitations
+
+- The calculator does not validate its operands: an empty or non-numeric string is not rejected cleanly (`bigint-calculator/src/main/java/arbitraryarithmetic/BigInteger.java`, constructor).
+- Shell, OCaml and Python exercises are coursework solutions with no automated tests.
 
 ## License
 

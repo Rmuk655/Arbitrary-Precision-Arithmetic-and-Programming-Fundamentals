@@ -15,6 +15,10 @@ public class BigInteger {
     public static final BigInteger ZERO = new BigInteger("0");
     // Checking if the BigInteger is negative or not.
     public BigInteger(String s) {
+        // Reject null, empty and non-numeric input with a clear message.
+        if (s == null || !s.matches("-?[0-9]+")) {
+            throw new IllegalArgumentException("Invalid BigInteger string: '" + s + "'");
+        }
         // If the BigInteger is negative, we remove the negative sign (to parse the remaining integer 
         //and perform operations on it). 
         if (s.charAt(0) == '-') {
