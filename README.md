@@ -42,6 +42,14 @@ Exact duplicates of the topic-oriented directories (the original assignment docu
 | `Assignment 8 - Shell Scripting/` | `linux-shell-scripting/` |
 | `Assignment 9 - Python/` | `python-text-processing-exercises/` |
 
+## Setup
+
+Ubuntu or WSL with `sudo`. All Python code uses only the standard library, so there is no `requirements.txt`.
+
+```bash
+bash setup.sh      # installs gcc/make, OCaml, opam, inotify-tools, gawk, bc, a word list (wamerican), Python 3; builds c-linking-and-build-systems
+```
+
 ## Build and run
 
 - BigInt calculator: `ant jar`, then `java -jar build/jar/aarithmetic.jar <int|float> <add|sub|mul|div> <a> <b>` (see [bigint-calculator/README.md](bigint-calculator/README.md)).

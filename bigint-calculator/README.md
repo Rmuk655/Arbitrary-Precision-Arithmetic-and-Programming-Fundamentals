@@ -9,6 +9,15 @@ An arbitrary-precision integer and decimal arithmetic library in Java, with its 
 - Division by zero is detected and reported instead of throwing.
 - Command-line tool packaged as a runnable JAR, plus an optional Python wrapper.
 
+## Setup
+
+Ubuntu or WSL with `sudo`. `bash setup.sh` installs a JDK (`default-jdk`), Ant, Maven and Python 3, then builds the JAR with `ant jar`. The code compiles on JDK 17 and newer (the Dockerfile uses JDK 23).
+
+```bash
+bash setup.sh
+java -jar build/jar/aarithmetic.jar int add 1 2     # prints 3
+```
+
 ## Build
 
 Requires a JDK and [Apache Ant](https://ant.apache.org/).
